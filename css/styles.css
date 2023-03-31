@@ -33,17 +33,20 @@ img{
 }
 .container {
   width: 100%;
-  max-width: 1158px;
+  /*max-width: 1158px;*/
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   outline: 2px solid red;
 }
-.section{
+
+
+
+/*.section{
   padding-bottom: 120px;
   padding-top: 120px;
   
-}
+}*/
 
 
 body {
@@ -546,6 +549,8 @@ color: var(--color-accent-customers);
 }
 /*---Section4-team---*/
 .Team {
+  padding-top: 96px; 
+  padding-bottom: 96px; 
   background-color: var(--color-background-cards);
   
    
