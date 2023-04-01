@@ -2,8 +2,40 @@
     .container{ 
       max-width: 1158px;
     }
-    }
     .Team{
-        padding-top: 120px;
-        padding-bottom: 120px;
+      padding-top: 120px;
+      padding-bottom: 120px;
+  }
+
+  .team-list {
+        
+    flex-wrap: wrap;
+    flex-direction: row;
+  gap: 24px;
+}
+
+.team-item{
+width: calc((100% - 72px) / 4);
+
+}
+.customers-section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-list {
+  justify-content: center;
+  gap:  24px ;
+  flex-basis: calc((100% - 120px) / 6);
+       
     }
+    .customers-item{
+      width: calc((100% - 120px) / 6);
+    height: 88px;
+    }
+    .footer-logo {
+      display: block;
+      margin-right: 120px;
+    }
+
+    }
+    
