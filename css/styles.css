@@ -33,7 +33,7 @@ img{
 }
 .container {
   width: 100%;
-  /*max-width: 1158px;*/
+  max-width: 426px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -96,7 +96,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-logo);
-  margin-right: 76px;
+  
 }
 
 
@@ -157,8 +157,11 @@ border-radius: 2px;
 .adress-list{
  
 }
+.adress-item{
+  margin-bottom: 12px;
+}
 .adress-mail{
-  margin-right: 40px;
+  
 }
 .adress-mail:hover,
 .adress-mail:focus
@@ -305,10 +308,10 @@ transition: border var(--hover-transition),
 .header-mob {
   display: flex;
   justify-content: space-between;
-  padding: 24px 16px;
+  
 }
 .header-logo {
-  margin-right: 120px;
+  
     color: var(--color-logo);
     font-family: Raleway, sans-serif;
     font-weight: 800;
@@ -411,34 +414,40 @@ transition: border var(--hover-transition),
 }
 .mobile-adress {
 }
+.span-accent{
+  color: var(--color-accent);
+}
 .mobile-contacts {
+}
+.container-menu{
+  width: 428px;
+  padding-left: 40px;
+  padding-right: 35px;
+  padding-bottom: 80px;
+
 }
 
 .mobile-contact-tel {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--color-logo);
   font-style: normal;
   text-decoration: none;
   line-height: 1.11;
-  padding-bottom: 40px;
+ 
 }
-
+.mobile-contact-item{
+  margin-bottom: 40px;
+}
 .mobile-contact-link {
   text-decoration: none;
   color: var(--color-text-add);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*.mobile-contact-link:hover,
-.mobile-contact-link:focus {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 40px;
-  color: var(--primary-brand);
-}*/
+
 .mobile-social {
   display: flex;
   justify-content: flex-start;
@@ -455,6 +464,7 @@ transition: border var(--hover-transition),
 .mobile-social-item {
   width: 40px;
   height: 40px;
+  
 }
 
 .mobile-social-link {
@@ -492,13 +502,17 @@ transition: border var(--hover-transition),
 
 .backdrop{
   position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--hover-transition),
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity var(--hover-transition),
     visibility var(--hover-transition);
 }
+  
 .is-hidden{
 opacity: 0;
 pointer-events: none;
@@ -510,18 +524,19 @@ visibility: hidden;
 
 
  .modal{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%) scale(1)  ;
-  min-height: 576px;
-  width: 408px;
-  background-color: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: transform var(--hover-transition);
-  padding: 72px 24px 24px 24px;
+  max-width: 408px;
+    max-height: 584px;
+    padding: 72px 24px 24px 24px;
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+  
  }
  .modal-close{
 
@@ -742,7 +757,7 @@ color: var(--color-accent-customers);
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
-    
+    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 8px;
@@ -750,11 +765,12 @@ color: var(--color-accent-customers);
 }
 .features-text{
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--color-text-main);
+  text-align: center;
 }
 .features-text,
 .team-text {
@@ -786,7 +802,8 @@ color: var(--color-accent-customers);
  .features {
  
   background-color: var(--color-background-white);
-    padding: 96px 16px
+    padding-top: 96px ;
+    padding-bottom: 96px;
  }
  .features-item{
   margin-bottom: 72px;
@@ -835,6 +852,11 @@ color: var(--color-accent-customers);
 }
 
 .team-list {
+  text-align: center;
+    list-style: none;
+  width: 264px;
+  align-items: center;
+  text-align: center;
   
   gap: 72px;
   list-style: none;
@@ -843,7 +865,7 @@ color: var(--color-accent-customers);
     
 }
 .img-avatar{
-  width: 100%;
+  max-width: 100%;
   display: block;
  }
 
@@ -1210,7 +1232,7 @@ background: var(--color-accent-soc) ;
 }
 .footer-container {
   
-  max-width: 1158px;
+  
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -1232,7 +1254,7 @@ background: var(--color-accent-soc) ;
    align-self: center;
    }
 .submit-container{
-  
+  width: 100%;
   display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1257,6 +1279,7 @@ background: var(--color-accent-soc) ;
     align-self: center;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .subscribe-icon {
@@ -1276,6 +1299,7 @@ background: var(--color-accent-soc) ;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+  width: 100%;
 }
 .input-email::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -1283,6 +1307,7 @@ background: var(--color-accent-soc) ;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+
 }
 .input-email:focus {
   background: transparent;

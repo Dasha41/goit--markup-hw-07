@@ -3,6 +3,9 @@
       max-width: 1158px;
       width: 100%;
 }
+.container-full{
+  max-width: 1158px;
+}
     
     .Team{
       padding-top: 120px;
@@ -15,7 +18,15 @@
     flex-direction: row;
   gap: 24px;
 }
-
+.footer-logo{
+  margin-bottom: 0;
+}
+.social-footer-container{
+  margin-bottom: 0;
+}
+.adress-mail{
+  margin-right: 40px;
+}
 .team-item{
 width: calc((100% - 72px) / 4);
 
@@ -107,7 +118,9 @@ width: calc((100% - 72px) / 4);
   .features-item:not(:last-child){
     margin-right: 24px;
   }
-
+.hero-button{
+  margin-top: 48px;
+}
 
 
   .footer-logo {
@@ -119,7 +132,7 @@ width: calc((100% - 72px) / 4);
   display: inline-block;
 }
 .submit-container {
-  margin-left: 80px;
+  margin-left: auto;
   align-self: baseline;
 }
 
@@ -130,8 +143,7 @@ width: calc((100% - 72px) / 4);
 .header-container{
   display: flex;
     align-items: center;
-    border-bottom: 1px solid #e7e9fc;
-
+    
 }
 .adress-mail {
   padding: 0;

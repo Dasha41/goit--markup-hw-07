@@ -1,17 +1,29 @@
 @media screen and (min-width: 480px){ 
-    .container{ 
-      max-width: 428px;
-      padding-right: 15px;
-    padding-left: 15px;
-}
+  
+  
 
 .mobile-nav {
   margin-bottom: auto;
 }
-.mobile-contact-tel {
-  font-size: 24px;
-}
+
     }
-    
-    
+    @media screen and (min-width: 479px){ 
+  
+      .modal {
+          max-width: 408px;
+          width: 100%;
+      }
+     }
+
+     @media screen and (min-width: 420px){
+      .mobile-contact-tel {
+        
+        font-size: 36px;
+     }
+     .mobile-social {
+      display: flex;
+      justify-content: flex-start;
+      gap: 24px;
+    }
+   }
     
