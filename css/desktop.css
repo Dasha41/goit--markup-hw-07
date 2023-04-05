@@ -3,13 +3,32 @@
       max-width: 1158px;
       width: 100%;
 }
+.submit-container{
+  width: auto;
+}
 .container-full{
   max-width: 1158px;
 }
-    
+.input-email{
+  padding-top: 8px;
+  padding-bottom:8px ;
+  padding-left: 16px;
+}
+    .adress{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .header-navigation{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
     .Team{
       padding-top: 120px;
       padding-bottom: 120px;
+  }
+  .header{
+    padding-bottom: 24px;
+    padding-top: 24px;
   }
 
   .team-list {
@@ -24,8 +43,8 @@
 .social-footer-container{
   margin-bottom: 0;
 }
-.adress-mail{
-  margin-right: 40px;
+.adress-item-two{
+  margin-left: 40px;
 }
 .team-item{
 width: calc((100% - 72px) / 4);
@@ -56,6 +75,10 @@ width: calc((100% - 72px) / 4);
   padding-top: 120px;
   padding-bottom: 120px
 }
+.features-list{
+ 
+}
+
 .features-tool{
   background: var(--color-background-cards);
   border-radius: 4px;
@@ -76,6 +99,7 @@ width: calc((100% - 72px) / 4);
   color: var(--color-text-main);
   margin-bottom: 8px;
   margin-top: 8px;
+  text-align: left;
     }
     .features-text{
       font-style: normal;
@@ -88,6 +112,7 @@ width: calc((100% - 72px) / 4);
     .team-text {
       line-height:1.5;
       font-size: 16px;
+      font-weight: 400;
       letter-spacing: 0.02em;
       color: var(--color-text-add);  }
 
@@ -116,7 +141,7 @@ width: calc((100% - 72px) / 4);
 
   }
   .features-item:not(:last-child){
-    margin-right: 24px;
+    
   }
 .hero-button{
   margin-top: 48px;

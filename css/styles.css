@@ -158,7 +158,7 @@ border-radius: 2px;
  
 }
 .adress-item{
-  margin-bottom: 12px;
+ 
 }
 .adress-mail{
   
@@ -194,7 +194,7 @@ border-radius: 2px;
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/back-mob.jpg);
+    url(../images/back-tel.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -393,7 +393,8 @@ transition: border var(--hover-transition),
   line-height: 40px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-bottom: 284px;
+  
+    margin-bottom: 284px;
 }
 
 .mobile-nav-item {
@@ -420,7 +421,8 @@ transition: border var(--hover-transition),
 .mobile-contacts {
 }
 .container-menu{
-  width: 428px;
+  max-width: 428px;
+  width: 100%;
   padding-left: 40px;
   padding-right: 35px;
   padding-bottom: 80px;
@@ -525,6 +527,7 @@ visibility: hidden;
 
  .modal{
   max-width: 408px;
+  width: 100%;
     max-height: 584px;
     padding: 72px 24px 24px 24px;
     background: #fcfcfc;
@@ -764,15 +767,16 @@ color: var(--color-accent-customers);
     color: #2E2F42;
 }
 .features-text{
+  text-align: left;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--color-text-main);
-  text-align: center;
+  
 }
-.features-text,
+
 .team-text {
   line-height:1.5;
   font-size: 16px;
@@ -854,7 +858,7 @@ color: var(--color-accent-customers);
 .team-list {
   text-align: center;
     list-style: none;
-  width: 264px;
+ 
   align-items: center;
   text-align: center;
   
@@ -872,6 +876,7 @@ color: var(--color-accent-customers);
 .team-item {
     background-color: var(--color-background-white) ;
     width: 100%;
+    max-width: 264px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
    }
@@ -1195,12 +1200,14 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--color-background-white);
-padding-bottom: 16px;
-
+text-align: center;
 
 }
 
 .footer-soc-list {
+  
+  margin-top: 16px;
+
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -1250,7 +1257,7 @@ background: var(--color-accent-soc) ;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
+   
    align-self: center;
    }
 .submit-container{

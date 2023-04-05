@@ -3,6 +3,9 @@
      
       max-width: 766px
     }
+    .input-email{
+      width: 264px;
+    }
 
     .Team {
       padding-top: 96px; 
@@ -11,8 +14,15 @@
         
           flex-wrap: wrap;
           flex-direction: row;
-        gap: 24px;
+        row-gap: 72px;
+        column-gap: 24px;
 }
+.input-email{
+  padding-top: 8px;
+  padding-bottom:8px ;
+  padding-left: 16px;
+}
+
 .logo{
   margin-right: 120px;
 }
@@ -45,6 +55,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    column-gap: 24px;
     row-gap: 72px;
     }
     .features-item:nth-child(3) {
@@ -79,13 +90,23 @@
 .social-footer-container {
   align-self: baseline;
 }
+.header-navigation{
+  padding-top: 24px;
+  padding-bottom: 24px;
+ 
+}
 .header{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.adress{
   padding-bottom: 16px;
   padding-top: 16px;
- 
 }
 .button-submit {
   margin-top: 0;
+  margin-left:0 ;
+ 
    }
    .header-mobile {
     display: none;
@@ -119,5 +140,8 @@
 }
 .container-full{
   max-width: 582px;
+}
+.footer-title{
+  text-align: left;
 }
    }
